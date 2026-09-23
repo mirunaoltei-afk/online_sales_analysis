@@ -17,8 +17,8 @@ manager.add_product(product3)
 manager.add_product(product4)
 
 
-print("\nEliminam produsul Telefon:")
-manager.remove_product("Telefon")
+print("\nEliminam produsul Smartphone:")
+manager.remove_product("Smartphone")
 
 print("\nProduse dupa eliminare:")
 manager.display_products()
