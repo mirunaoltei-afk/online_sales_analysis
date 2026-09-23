@@ -1,5 +1,7 @@
 from product import Product
 from product_manager import ProductManager
+from cart import Cart
+import random
 
 
 manager = ProductManager()
@@ -23,3 +25,15 @@ manager.remove_product("Telefon")
 
 print("\nProduse dupa eliminare:")
 manager.display_products()
+
+cart = Cart()
+
+selected_products = random.sample(manager.products, 3)
+
+for product in selected_products:
+    cart.add_product(product)
+
+print("\nContinutul cosului:")
+cart.display_cart()
+
+print(f"\nValoarea totala de plata: {cart.calculate_total()} lei")
