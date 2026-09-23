@@ -18,3 +18,8 @@ print("Produse disponibile:")
 manager.display_products()
 
 print(f"\nValoarea totala a inventarului: {manager.total_inventory_value()} lei")
+print("\nEliminam produsul Telefon:")
+manager.remove_product("Telefon")
+
+print("\nProduse dupa eliminare:")
+manager.display_products()
